@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Lumina</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo">L</div>
+        <div>
+          <h1>Lumina</h1>
+          <p>Frontend student learning to build web apps and web3 projects.</p>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN LAYOUT -->
+    <main>
+      <div>
+        <!-- ABOUT -->
+        <section id="about" class="panel">
+          <div class="profile">
+            <img src="lumina.jpeg" class="avatar" alt="Profile" />
+            <div class="bio">
+              <h2>Hi,I'm Lumina</h2>
+              <p>Still learning web development but I have other skills in web 3</p>
+
+              <div class="skills-list">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Git</span>
+              </div>
+
+              <a class="github-btn" href="https://github.com/endurance2003" target="_blank">
+                GitHub Profile
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="panel">
+          <h3>Skills & Tools</h3>
+          <p class="muted">Still learning web development but I have other skills in web 3.</p>
+
+          <div class="projects-grid">
+            <div class="project">
+              <h3>Responsive Layouts</h3>
+              <p>Flexbox, Grid, breakpoints</p>
+            </div>
+            <div class="project">
+              <h3>Interactive UI</h3>
+              <p>Vanilla JS + DOM</p>
+            </div>
+            <div class="project">
+              <h3>Version Control</h3>
+              <p>Git & GitHub</p>
+            </div>
+            <div class="project">
+              <h3>Tooling</h3>
+              <p>VS Code, DevTools</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="panel">
+          <h3>Projects</h3>
+
+          <div class="projects-grid">
+
+            <div class="project">
+              <img src="https://via.placeholder.com/500x300.png?text=Portfolio" class="project-img" alt="Portfolio image">
+              <h3>Portfolio Website</h3>
+              <p>Simple personal site built with HTML + CSS + JS</p>
+            </div>
+
+            <div class="project">
+              <img src="https://via.placeholder.com/500x300.png?text=Todo+App" class="project-img" alt="Todo image">
+              <h3>Todo App</h3>
+              <p>Stores tasks locally with JavaScript</p>
+            </div>
+
+            <div class="project">
+              <img src="https://via.placeholder.com/500x300.png?text=Weather+App" class="project-img" alt="Weather image">
+              <h3>Weather App</h3>
+              <p>Shows weather using an API</p>
+            </div>
+
+            <div class="project">
+              <img src="https://via.placeholder.com/500x300.png?text=Mini+Blog" class="project-img" alt="Blog image">
+              <h3>Mini Blog</h3>
+              <p>Static blog with HTML + CSS</p>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <aside>
+        <div class="card" id="contact">
+          <h4>Contact</h4>
+          <p class="muted">Send a message with the form below.</p>
+
+          <form action="https://formspree.io/f/xjkqbpdn" method="POST" class="contact">
+
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="4" placeholder="Your message here..." required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h4>Quick Info</h4>
+          <p class="muted">Student of Ekiti State university, Nigeria</p>
+          <p class="muted">Frontend student at GIDA</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
